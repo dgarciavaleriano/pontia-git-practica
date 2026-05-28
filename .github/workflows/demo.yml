@@ -3,8 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       nombre:
-        description: '¿Como te llamas?'
+        description: 'Como te llamas'
         required: true
+        default: 'Pedro'
 jobs:
   saludo:
     runs-on: ubuntu-latest
