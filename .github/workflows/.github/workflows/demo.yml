@@ -1,0 +1,13 @@
+name: Workflow Manual Evaluacion
+on:
+  workflow_dispatch:
+    inputs:
+      nombre:
+        description: '¿Como te llamas?'
+        required: true
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludo
+        run: echo "Hola, ${{ github.event.inputs.nombre }}!”
